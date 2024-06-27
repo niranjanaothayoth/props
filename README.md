@@ -1,10 +1,10 @@
 ![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
 
-# Kalvium Lab 
+# Kalvium Lab | Let's rebuild
 
 ## Learning Goals
 
-In this exercise, the goal is to understand and experiment around JSX - using both class and functional components. 
+In this exercise, the goal is to understand and experiment around custom components. We will try to make our own components.
 
 ## Getting started
 
@@ -13,33 +13,30 @@ In this exercise, the goal is to understand and experiment around JSX - using bo
 
 Whenever you create a first significant change, you should make your first commit.
 
-3. Follow these [guidelines to add, commit and push changes](https://github.com/Kalvium-Program/general-guidelines-labs-project-builders).
+3. Follow these [guidelines to add, commit and push changes](https://github.com/FACEPrep-ProGrad/general-guidelines-labs-project-builders.git).
 
 In the end of this document, you will find guidelines on how to submit the exercise.
 
 ### Introduction
-The task is to create a webpage which looks like the image below:
 
-![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/lab-react-jsx.png)
+For this particular exercise -> the entire code for the webpage is given to you. But the problem is - everything is in a single file - ie: `App.jsx`.
+Your task is to make the code for this lab more structured by creating `components` and then rendering those `components` inside `App.jsx`.
+
+One example is already given to you -> you can observe how `footer` of this webpage has it's own component by the name `GallaryFooter.jsx` - and is being rendered in `App.jsx` file.
+Similarly, you have to create `components` for `header` section and  `body` section.
+**Remember** -> your data should also be in a different `component`. ( you can then use `props` to access it)
 
 ### Steps to follow:
 1. Clone this repository.
 2. On your terminal go inside `lab-react-jsx-boilerplate` directory and use the following command:
-   `npm install`
+   `npm install i`
    This command install's all the packages to your system that this project is using.
-3. Few lines of code is already written for you -- in the following files:
-    1. `App.jsx` : In this file, you need to complete the task by using functional component. 
-        In this file, `imageData` is a function which stores the an array of objects -> which contains two fields: id and image.
-        **NOTE** note how images are being imported. 
-        Your task is to complete the `App function` - and get an output as shown in the above image.
-    
-    2. `AppClass.jsx`: Before doing anything --> go to `index.jsx` file and check which component is being
-        rendered. For now, `<App/>` is being rendered, we need to change this to `<AppClass/>`. Import this 
-        component and render `AppClass`, so that any changes made in `AppClass` file, are displayed on the web now.
-        Similar to 1st case, `imageData` is defined for you, you just need to complete the class component `AppClass` - and get an output as shown in the above image.
 
-4. Once you are able to display the images on the browser, then you can style it in `App.css` file. If you
-   observe, in both the files, `App.css` is the only style sheet which is being imported, so any styles added 
-   to this file, will be reflected for both the cases.
+### Keep in mind:
+Just keep in mind -> how will you manage the styles for each component. ( For now all the styling for this webpage is done inside `App.css` file).
+So is it a good idea to add all your css inside a single file, or should you have different files for different `components`🧐.
 
+### Output:
+You should be able to produce the same webpage -- that you currently have from the code provided to you.
+   
 Happy Coding Kalvium ❤️!

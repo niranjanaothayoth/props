@@ -1,15 +1,16 @@
-// App.jsx
-import React from 'react';
-import imageData from './components/DataComponent';
+import './App.css';
+import Header from './components/Header';
+import Body from './components/Body';
+import GallaryFooter from './components/GallaryFooter';
 
-const App = () => {
+function App() {
   return (
     <div>
-      {imageData.map((item) => (
-        <img key={item.id} src={item.img} alt={`Elephant ${item.id}`} />
-      ))}
+      <Header />
+      <Body />
+      <GallaryFooter />
     </div>
   );
-};
+}
 
 export default App;
